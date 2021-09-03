@@ -1,13 +1,15 @@
-package com.possible;
+package com.possible.currencyFormat;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class CurrencyFormat {
+public class Solution {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner scanner = new Scanner(new File("input.txt"));
         double payment = scanner.nextDouble();
         scanner.close();
 

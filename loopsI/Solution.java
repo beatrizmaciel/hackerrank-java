@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        Scanner in = new Scanner(new File("input.txt"));
-        int N = in.nextInt();
+        InputStream fis = new FileInputStream("input.txt");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fis));
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
 
         for(int i = 1; i <= 10; i++) {
 
