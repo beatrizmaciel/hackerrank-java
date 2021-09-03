@@ -1,6 +1,6 @@
 # HackerRank | Java
 
-Hey! These are my solutions on Java HackerRank. They are organized on files with a Solution class and an input.txt, so the answers are slightly different then the ones you are suppose to do on the site.
+Hey! These are my solutions on Java HackerRank. They are organized on files with a Solution class and an input.txt, so the answers are slightly different than the ones you are suppose to do on the site.
 
 To check out my explanations about the exercises (in PT/BR :brazil:) you can visit dev.to/beatrizmaciel.
 
