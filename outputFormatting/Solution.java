@@ -1,11 +1,13 @@
-package com.possible;
+package com.possible.outputFormatting;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class OutputFormatting {
+public class Solution {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner sc = new Scanner(new File("input.txt"));
         System.out.println("================================");
         for(int i=0;i<3;i++)
         {

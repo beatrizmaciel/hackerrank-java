@@ -1,10 +1,12 @@
-package com.possible;
+package com.possible.loopsII;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class TestaLoopsII {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+public class Solution {
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner in = new Scanner(new File("input.txt"));
         int t = in.nextInt();
         for(int i=0; i < t ; i++) {
             int a = in.nextInt();

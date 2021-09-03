@@ -1,14 +1,16 @@
-package com.possible;
+package com.possible.stringsIntroduction;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class StringsIntroduction {
+public class Solution {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner scanner = new Scanner(new File("input.txt"));
         String A = scanner.next();
         String B = scanner.next();
 
