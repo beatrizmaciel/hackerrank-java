@@ -1,7 +1,6 @@
 package com.possible.loopsI;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws FileNotFoundException, IOException {

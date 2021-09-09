@@ -1,5 +1,8 @@
-package com.possible;
+package com.possible.anagrams;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.FileAlreadyExistsException;
 import java.util.Scanner;
 
 public class Anagrams {
@@ -27,9 +30,9 @@ public class Anagrams {
         return true;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(new File("input.txt"));
         String a = scan.next();
         String b = scan.next();
         scan.close();

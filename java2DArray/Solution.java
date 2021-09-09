@@ -1,15 +1,14 @@
 package com.possible.java2DArray;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        InputStream fis = new FileInputStream("input.txt");
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fis));
 
         List<List<Integer>> arr = new ArrayList<>();
 

@@ -1,15 +1,16 @@
-package com.possible;
+package com.possible.substringComparisons;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class StringCompare {
-
-    public static String getSmallestAndLargest(String s, int k){
+public class Solution {
+    public static String getSmallestAndLargest(String s, int k) {
         String smallest = s.substring(0,k);
         String largest = s.substring(0,k);
-        int i = 0;
+        int i=0;
 
-        while (i+k <= s.length()) {
+        while(i+k<=s.length()) {
             if(s.substring(i,i+k).compareTo(smallest) < 0 ) {
                 smallest = s.substring(i,i+k);
             } else if (s.substring(i,i+k).compareTo(largest) > 0) {
@@ -18,21 +19,12 @@ public class StringCompare {
             i++;
         }
 
-//        for (int i = 1; i <= (s.length() - k); i++){
-//            sequence = s.substring(i, (i + k));
-//        }
-
-        if(s.compareTo(String.valueOf(k)) > 0){
-            System.out.println(s.substring(10,13));
-            System.out.println(s.substring(0,3));
-        }
-
         return smallest + "\n" + largest;
-
     }
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner scan = new Scanner(new File("input.txt"));
         String s = scan.next();
         int k = scan.nextInt();
         scan.close();
