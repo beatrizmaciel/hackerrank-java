@@ -1,11 +1,15 @@
 package com.possible.hashset;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+    public static void main(String[] args) throws FileNotFoundException {
+        Scanner s = new Scanner(new File("input.txt"));
         int t = s.nextInt();
         String[] pair_left = new String[t];
         String[] pair_right = new String[t];
@@ -15,16 +19,11 @@ public class Solution {
             pair_right[i] = s.next();
         }
 
-        HashSet<String[]> hashset = new HashSet<>();
-        hashset.add(pair_left);
-        hashset.add(pair_right);
+        HashSet<String> hashset = new HashSet<>();
 
-
-        if (pair_left != pair_right){
-            for (int i = 1; i < t; i++){
-                System.out.println(i);
-            }
+        for (int i = 0; i < t; i++){
+            hashset.add(pair_left[i] + " " + pair_right[i]);
+            System.out.println(hashset.size());
         }
-
     }
 }
