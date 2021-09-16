@@ -1,0 +1,23 @@
+10
+48908 99556 51237 37007 96350 9826 11431 62869 50411 83719
+10
+Delete
+2
+Insert
+4 36173
+Insert
+6 79735
+Delete
+3
+Delete
+0
+Insert
+4 98904
+Delete
+9
+Insert
+2 2073
+Delete
+0
+Delete
+5
