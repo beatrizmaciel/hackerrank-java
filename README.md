@@ -7,7 +7,7 @@ To check out my explanations about the exercises (in PT/BR :brazil:) you can vis
 I hope this will be helpful :) If you have any questions you can message me on dev.to!
 
 
-# Indice
+# Explanations
 
 - [HackerRank #6 | Scanner e End-of-file](https://dev.to/beatrizmaciel/hackerrank-6-scanner-e-endoffile-462c)
 - [HackerRank #7 | Int to String / String to Int](https://dev.to/beatrizmaciel/hackerrank-7-int-em-string-e-vice-versa-4n1e)
